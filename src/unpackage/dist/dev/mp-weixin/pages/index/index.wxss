@@ -1,0 +1,34 @@
+
+.content {
+	text-align: center;
+	height: 400rpx;
+}
+.logo {
+	height: 200rpx;
+	width: 200rpx;
+	margin-top: 200rpx;
+}
+.title {
+	font-size: 42rpx;
+	color: rgba(0, 0, 0, 0.84);
+	letter-spacing: -0.51rpx;
+	text-align: center;
+}
+.sub-title {
+	margin-top: 182rpx;
+	opacity: 0.8;
+	font-family: PingFangSC-Semibold;
+	font-size: 24rpx;
+	color: #4A4A4A;
+	letter-spacing: 0;
+	text-align: center;
+	line-height: 28rpx;
+}
+.login-button {
+	margin-top: 160rpx;
+	width: 80%;
+	background: #FF6265;
+	border-radius: 16rpx;
+	color: #fff;
+}
+

@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/main/main",
+    "pages/find/find",
+    "pages/mine/mine"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "迷茫",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#4A4A4A",
+    "selectedColor": "#FF6265",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/main/main",
+        "text": "路口",
+        "iconPath": "static/camera.png",
+        "selectedIconPath": "static/camera.png"
+      },
+      {
+        "pagePath": "pages/find/find",
+        "text": "指引",
+        "iconPath": "static/eye.png",
+        "selectedIconPath": "static/eye.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "宅",
+        "iconPath": "static/user.png",
+        "selectedIconPath": "static/user.png"
+      }
+    ]
+  },
+  "usingComponents": {}
+}
