@@ -19,7 +19,7 @@
 
 2、准备分大致一下几个模块。
 
-!(https://github.com/bravekingzhang/unsure/blob/master/module.png)
+![module](https://github.com/bravekingzhang/unsure/blob/master/module.png)
 
 3、指引是重点关注的对象，自救者多福。
 
