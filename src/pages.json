@@ -1,0 +1,59 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/main/main",
+			"style": {
+				"navigationBarTitleText": "迷茫村"
+			}
+		},
+		{
+			"path": "pages/find/find",
+			"style": {
+				"navigationBarTitleText": "指引"
+			}
+		},
+		{
+			"path": "pages/mine/mine",
+			"style": {
+				"navigationBarTitleText": "宅"
+			}
+		}
+	],
+	"tabBar": { //模式配置，仅开发期间生效
+		"color":"#4A4A4A",
+		"selectedColor":"#FF6265",
+		"backgroundColor":"#FFFFFF",
+		"list":[
+			{
+				"pagePath":"pages/main/main",
+				"text":"路口",
+				"iconPath":"static/camera.png",
+				"selectedIconPath":"static/camera.png"
+			},
+			{
+				"pagePath":"pages/find/find",
+				"text":"指引",
+				"iconPath":"static/eye.png",
+				"selectedIconPath":"static/eye.png"
+			},
+			{
+				"pagePath":"pages/mine/mine",
+				"text":"宅",
+				"iconPath":"static/user.png",
+				"selectedIconPath":"static/user.png"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "迷茫",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}
