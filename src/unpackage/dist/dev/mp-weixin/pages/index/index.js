@@ -111,51 +111,41 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
     return {
-      title: '迷茫',
-      subTitle: '迷茫的人生，如何才能走出困境，如何获得重生，一切尽在这里面',
-      userInfo: {} };
+      images: [] };
 
   },
-  onLoad: function onLoad() {
-    var that = this;
-    uni.getStorage({
-      key: 'userinfo',
-      success: function success(res) {
-        console.log(res.data);
-        if (res.data) {
-          that.userInfo = res.data;
-          uni.reLaunch({
-            url: '../main/main' });
-
+  onReady: function onReady() {var _this = this;
+    uni.request({
+      url: 'https://cn.bing.com/HPImageArchive.aspx?format=js&idx=1&n=20',
+      success: function success(result) {
+        console.log(result);
+        if (result.statusCode == 200 && result.data) {
+          _this.images = result.data.images;
         }
       } });
 
-  },
-  onShow: function onShow() {
-
-  },
-  methods: {
-    onLoginClick: function onLoginClick() {
-      var that = this;
-      uni.login({
-        provider: 'weixin',
-        success: function success(loginRes) {
-          // 获取用户信息
-          uni.getUserInfo({
-            provider: 'weixin',
-            success: function success(infoRes) {
-              that.userInfo = infoRes.userInfo;
-              uni.setStorageSync('userinfo', infoRes.userInfo);
-              console.log('用户信息已经存入缓存');
-            } });
-
-        } });
-
-    } } };exports.default = _default;
+  } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ "./node_modules/@dcloudio/uni-mp-weixin/dist/index.js")["default"]))
 
 /***/ }),

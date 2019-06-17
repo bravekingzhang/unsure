@@ -1,41 +1,62 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/main/main",
-    "pages/find/find",
-    "pages/mine/mine"
+    "pages/main/home",
+    "pages/find/home",
+    "pages/mine/home",
+    "pages/webview/webview",
+    "pages/find/readingList",
+    "pages/tool/tool",
+    "pages/tool/randomTeam",
+    "pages/main/rssListView",
+    "pages/main/rssDetail",
+    "pages/tool/hanziWrite"
   ],
   "subPackages": [],
   "window": {
-    "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "迷茫",
-    "navigationBarBackgroundColor": "#F8F8F8",
-    "backgroundColor": "#F8F8F8"
+    "navigationBarBackgroundColor": "#0081ff",
+    "navigationBarTitleText": "ColorUi for UniApp",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white"
   },
   "tabBar": {
-    "color": "#4A4A4A",
-    "selectedColor": "#FF6265",
     "backgroundColor": "#FFFFFF",
+    "borderStyle": "white",
+    "color": "#9B9B9B",
+    "selectedColor": "#EC008C",
     "list": [
       {
-        "pagePath": "pages/main/main",
-        "text": "路口",
-        "iconPath": "static/camera.png",
-        "selectedIconPath": "static/camera.png"
+        "iconPath": "static/tabbar/pic.png",
+        "selectedIconPath": "static/tabbar/pic_selected.png",
+        "pagePath": "pages/index/index",
+        "text": "美图"
       },
       {
-        "pagePath": "pages/find/find",
-        "text": "指引",
-        "iconPath": "static/eye.png",
-        "selectedIconPath": "static/eye.png"
+        "iconPath": "static/tabbar/find.png",
+        "selectedIconPath": "static/tabbar/find_selected.png",
+        "pagePath": "pages/find/home",
+        "text": "指引"
       },
       {
-        "pagePath": "pages/mine/mine",
-        "text": "宅",
-        "iconPath": "static/user.png",
-        "selectedIconPath": "static/user.png"
+        "iconPath": "static/tabbar/tool.png",
+        "selectedIconPath": "static/tabbar/tool_selected.png",
+        "pagePath": "pages/tool/tool",
+        "text": "工具集"
+      },
+      {
+        "iconPath": "static/tabbar/mine.png",
+        "selectedIconPath": "static/tabbar/mine_selected.png",
+        "pagePath": "pages/mine/home",
+        "text": "宅"
       }
     ]
   },
-  "usingComponents": {}
+  "usingComponents": {
+    "android": "/pages/main/android",
+    "motivational": "/pages/find/motivational",
+    "travel": "/pages/find/travel",
+    "reading": "/pages/find/reading",
+    "book": "/pages/find/book",
+    "cu-custom": "/colorui/components/cu-custom"
+  }
 }

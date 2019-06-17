@@ -3,57 +3,102 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "登录"
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
 			}
 		},
 		{
-			"path": "pages/main/main",
+			"path": "pages/main/home",
 			"style": {
-				"navigationBarTitleText": "迷茫村"
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true
 			}
 		},
 		{
-			"path": "pages/find/find",
+			"path": "pages/find/home",
 			"style": {
-				"navigationBarTitleText": "指引"
+				"navigationBarTitleText": ""
 			}
 		},
 		{
-			"path": "pages/mine/mine",
+			"path": "pages/mine/home",
 			"style": {
-				"navigationBarTitleText": "宅"
+				"enablePullDownRefresh": true,
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/webview/webview",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "default"
+			}
+		},
+		{
+			"path": "pages/find/readingList",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}, {
+			"path": "pages/tool/tool",
+			"style": {}
+		}, {
+			"path": "pages/tool/randomTeam",
+			"style": {}
+		},
+		{
+			"path": "pages/main/rssListView",
+			"style": {}
+		},
+		{
+			"path": "pages/main/rssDetail",
+			"style": {}
+		},
+		{
+			"path":"pages/tool/hanziWrite",
+			"style":{
+				"usingComponents":{
+                     "hanzi-writer-view": "/wxcomponents/hanzi-writer-miniprogram/hanzi-writer-view"
+				}
 			}
 		}
 	],
-	"tabBar": { //模式配置，仅开发期间生效
-		"color":"#4A4A4A",
-		"selectedColor":"#FF6265",
-		"backgroundColor":"#FFFFFF",
-		"list":[
-			{
-				"pagePath":"pages/main/main",
-				"text":"路口",
-				"iconPath":"static/camera.png",
-				"selectedIconPath":"static/camera.png"
+	"globalStyle": {
+		"navigationBarBackgroundColor": "#0081ff",
+		"navigationBarTitleText": "ColorUi for UniApp",
+		"navigationStyle": "custom",
+		"navigationBarTextStyle": "white"
+	},
+	"tabBar": {
+		"backgroundColor": "#FFFFFF",
+		"borderStyle": "white",
+		"color": "#9B9B9B",
+		"selectedColor": "#EC008C",
+		"list": [{
+				"iconPath": "static/tabbar/pic.png",
+				"selectedIconPath": "static/tabbar/pic_selected.png",
+				"pagePath": "pages/index/index",
+				"text": "美图"
 			},
 			{
-				"pagePath":"pages/find/find",
-				"text":"指引",
-				"iconPath":"static/eye.png",
-				"selectedIconPath":"static/eye.png"
+				"iconPath": "static/tabbar/find.png",
+				"selectedIconPath": "static/tabbar/find_selected.png",
+				"pagePath": "pages/find/home",
+				"text": "指引"
 			},
 			{
-				"pagePath":"pages/mine/mine",
-				"text":"宅",
-				"iconPath":"static/user.png",
-				"selectedIconPath":"static/user.png"
+				"iconPath": "static/tabbar/tool.png",
+				"selectedIconPath": "static/tabbar/tool_selected.png",
+				"pagePath": "pages/tool/tool",
+				"text": "工具集"
+			},
+			{
+				"iconPath": "static/tabbar/mine.png",
+				"selectedIconPath": "static/tabbar/mine_selected.png",
+				"pagePath": "pages/mine/home",
+				"text": "宅"
 			}
 		]
 	},
-	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "迷茫",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
-	}
+	"usingComponts": true
 }

@@ -4,11 +4,12 @@
     "ignore": []
   },
   "setting": {
-    "urlCheck": false
+    "urlCheck": false,
+    "es6": true
   },
   "compileType": "miniprogram",
   "libVersion": "2.6.4",
-  "appid": "touristappid",
+  "appid": "wx961717d0a869bfd8",
   "projectname": "src",
   "condition": {
     "search": {
